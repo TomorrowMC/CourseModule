@@ -36,8 +36,6 @@ public class Clock {
         int m;
         String hor;
         String mit;
-
-
         try {
             dotIndex = s.indexOf(":");
             hor = s.substring(0, dotIndex);
@@ -52,7 +50,6 @@ public class Clock {
 
             throw new IllegalArgumentException("Invalid argument in constructor 1!");
         }
-
 
         if (h < 0 || h > 23) {
             throw new IllegalArgumentException("Invalid argument in constructor 1!");
@@ -128,11 +125,11 @@ public class Clock {
 
     // Test client
     public static void main(String[] args) {
-//        Clock clock1 = new Clock(1, 0);
+//        com.CW10.Clock clock1 = new com.CW10.Clock(1, 0);
 //        System.out.println(clock1);
 //
 //        try {
-//            Clock clock2 = new Clock(50, 0);
+//            com.CW10.Clock clock2 = new com.CW10.Clock(50, 0);
 //        } catch (IllegalArgumentException e) {
 //            System.out.println("Invalid argument in constructor 1!");
 //        }
@@ -141,12 +138,12 @@ public class Clock {
         System.out.println(clock3);
 //
 //        try {
-//            Clock clock4 = new Clock("50:00");
+//            com.CW10.Clock clock4 = new com.CW10.Clock("50:00");
 //        } catch (IllegalArgumentException e) {
 //            System.out.println("Invalid argument in constructor 2!");
 //        }
 //
-//        Clock clock5 = new Clock("02:30");
+//        com.CW10.Clock clock5 = new com.CW10.Clock("02:30");
 //        clock5.tock(100);
 //        System.out.println(clock5);
 //

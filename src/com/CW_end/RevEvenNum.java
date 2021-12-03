@@ -13,13 +13,7 @@ public class RevEvenNum {
     // You must NOT use StringBuilder or Regular Expression methods.
     
     public static String revEvenNum(String input) {
-        int toalEvenNumber=0;
-
-
-//TODO:写三次for循环,第一次算出偶数的个数,第二次把所有的偶数放进数组,第三次给所有的偶数重新赋值
-
-
-
+       /* int toalEvenNumber=0;
         for (int i = 0; i < input.length(); i++) {
             if (Character.isDigit(input.charAt(i))) {
                 int j= Integer.parseInt(input.substring(i, i+1));
@@ -57,7 +51,22 @@ public class RevEvenNum {
                 }
             }
         }
-		return input;
+		return input;*/
+
+        char[] chars = input.toCharArray();
+        for (int i = 0; i < chars.length/2; i++) {
+            label:  if (chars[i] == '2'||chars[i] == '4'||chars[i] == '6'||chars[i] == '8'||chars[i] == '0') {
+                char a=chars[i];
+                for (int j = chars.length - 1; j < chars.length/2; j--) {
+                    if (chars[j] == '2'||chars[j] == '4'||chars[j] == '6'||chars[j] == '8'||chars[j] == '0') {
+                        chars[i]=chars[j];
+                        chars[j] = a;
+                        break label;
+                    }
+                }
+            }
+        }
+        return String.valueOf(chars);
     }
     
     // Test Client

@@ -6,8 +6,8 @@
 // */
 //public class CW6_1 {
 //    public static void main(String[] args) {
-//        Clock clock1 = new Clock(23, 59);
-//        Clock clock2 = new Clock("02:30");
+//        com.CW10.Clock clock1 = new com.CW10.Clock(23, 59);
+//        com.CW10.Clock clock2 = new com.CW10.Clock("02:30");
 //
 //        System.out.println(clock1);
 //        System.out.println(clock2);
@@ -22,21 +22,21 @@
 //    }
 //}
 //
-//class Clock {
+//class com.CW10.Clock {
 //    private int hours;
 //    private int minutes;
 //
 //    // CW1 6.1
 //    // Creates a clock whose initial time is h hours and m minutes.
 //
-//    public Clock(int hours, int minutes) {
+//    public com.CW10.Clock(int hours, int minutes) {
 //        this.hours = hours;
 //        this.minutes = minutes;
 //    }
 //
 //    // CW1 6.2
 //    // Creates a clock whose initial time is specified as a string, using the format HH:MM.
-//    public Clock(String s) {
+//    public com.CW10.Clock(String s) {
 //        this.hours = Integer.parseInt(s.substring(0, 2));
 //        this.minutes = Integer.parseInt(s.substring(3, 5));
 //    }
@@ -62,7 +62,7 @@
 //
 //    // CW1 6.4
 //    // Is the time on this clock earlier than the time on that one?
-//    public boolean isEarlierThan(Clock that) {
+//    public boolean isEarlierThan(com.CW10.Clock that) {
 //
 //        if (this.hours != that.hours) {
 //            return this.hours < that.hours;
